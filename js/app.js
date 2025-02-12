@@ -566,4 +566,61 @@ const buildCards =(obj)=> {
 }
 
 // buildCards(heroes[0])
-heroes.forEach(hero => buildCards(hero))
+
+//Abstract forEach loop
+//heroes.forEach(hero => buildCards(hero)) 
+
+const loadCard =(arr)=> {
+    arr.forEach(item => buildCards(item))
+}
+
+const loadBtn = document.getElementById('loadBtn')
+
+//document.addEventListener(event, callback function)
+
+loadBtn.addEventListener('click', (e)=> {
+    e.preventDefault()
+    row.innerHTML = ''
+    const filter = document.getElementById('filter').value
+
+    //Object.key(obj) => return an array of the keys of an object
+    //Object.values(obj) => returns an array of the values of an object
+    // arr.includes(item) => returns a boolean if item is in arr
+
+    let cards = heroes.filter(hero => Object.values(hero).includes(filter))
+    
+    loadCard(cards)
+})
+
+/**
+ * arr.filter() => return a copy array after an original array has been filtered though
+ */
+
+// let arr1 = [1, 2, 4, 7, 8, 9]
+
+// let arr2 = arrl.filter(num => num % 2 == 0)
+
+// let marvelHero = heroes.filter(hero => hero.franchise == 'marvel')
+
+// console.log(marvelHero);
+/*
+
+Declaraive
+
+// let dcHero = []
+
+// for(let hero of heroes) {
+//     if (hero.franchise == 'dc') {
+//         dcHero = [...dcHero, hero]
+//     }
+// }
+*/
+
+// let dcHero = heroes.filter(hero => hero.franchise == 'dc')
+
+// console.log(dcHero);
+
+
+
+
+

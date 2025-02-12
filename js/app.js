@@ -1,13 +1,17 @@
+/**
+ * name, alias, powers [], franchise, team [], alignment bool, rivals [], species
+ */
+
 const heroes = [
     {
-        id: 'mal',
+        id: 'ma1',
         name: 'steven strange',
         alias: 'dr. strange',
         powers: ['magic', 'smart'],
         franchise: 'marvel',
-        team: ['avengers', 'defenders' ,'illuminati'],
+        team: ['avengers', 'defenders', 'illuminati' ],
         alignment: true,
-        riavals: ['dormamu', 'nightmare', 'shuma-gorath', 'enchantress', 'baron mordo'],
+        rivals: ['dormamu', 'nightmare', 'shuma-gorath', 'enchantress', 'baron mordo'],
         species: 'human',
         firstApp: new Date('July 1, 1963')
     },
@@ -15,25 +19,25 @@ const heroes = [
         id: 'dc1',
         name: 'kal-el',
         alias: 'superman',
-        powers: ['flight', 'x-ray vision','super stright', 'leaser eyes', 'frost breath'],
+        powers: ['flight', 'x-ray vision', 'super strength', 'laser eyes', 'frost breath'],
         franchise: 'dc',
         team: ['justice league'],
         alignment: true,
-        riavals: ['lex luthor', 'batman', 'dakrseid', 'doomday',],
+        rivals: ['lex luthor', 'batman', 'darkseid', 'doomsday', 'bizarro'],
         species: 'alien',
-        firstApp: new Date('June 1963')
+        firstApp: new Date('June, 1938')
     },
     {
         id: 'im1',
         name: 'al simmons',
         alias: 'spawn',
-        powers: ['immortality', 'super strength', 'regenerate' ,'necroplasm'],
-        franchise: 'marvel',
-        team: [null],
+        powers: ['immortality', 'super strength','regenerate', 'necroplasm manipulation'],
+        franchise: 'image',
+        team: [],
         alignment: true,
-        riavals: ['violator', 'a devil', 'billy kinkaid'],
+        rivals: ['violator', 'a devil', 'billy kinkaid', 'the redeemer'],
         species: 'hellspawn',
-        firstApp: new Date('May 19, 1992')
+        firstApp: new Date('May 1, 1992')
     },
     {
         id: 'ma2',
@@ -43,7 +47,7 @@ const heroes = [
         franchise: 'marvel',
         team: ['avengers'],
         alignment: true,
-        riavals: ['mephisto', 'blackheart', 'orb', 'zarathos', 'manticore'],
+        rivals: ['mephisto', 'blackheart', 'orb', 'zarathos', 'manticore'],
         species: 'hellspawn',
         firstApp: new Date('August 1, 1972')
     },
@@ -53,21 +57,21 @@ const heroes = [
         alias: 'green goblin',
         powers: ['hoverboard', 'money', 'super smart', 'super strength'],
         franchise: 'marvel',
-        team: ['sinner six'],
-        alignment: true,
-        riavals: ['spiderman','venom'],
+        team: ['sinister six'],
+        alignment: false,
+        rivals: ['spider-man', 'venom', 'x-men'],
         species: 'human',
-        firstApp: new Date('July 1, 1963')
+        firstApp: new Date('July 1, 1964')
     },
     {
         id: 'im2',
         name: 'mark grayson',
-        alias: 'invinvible',
-        powers: ['super strength', 'flight', 'speed'],
+        alias: 'invincible',
+        powers: ['flight', 'strength', 'speed'],
         franchise: 'image',
-        team: ['the pact', 'guardians of the globe' ,],
+        team: ['the pact', 'guardians of the globe'],
         alignment: true,
-        riavals: ['thragg', 'battle beast', 'conquest', 'omin man'],
+        rivals: ['thragg', 'battle beast', 'conquest', 'omni man'],
         species: 'alien',
         firstApp: new Date('August 1, 2002')
     },
@@ -78,20 +82,20 @@ const heroes = [
         powers: ['strength', 'speed', 'flight', 'laser eyes'],
         franchise: 'dynamite',
         team: ['the seven'],
-        alignment: true,
-        riavals: ['the boys'],
+        alignment: false,
+        rivals: ['the boys'],
         species: 'human',
-        firstApp: new Date('October 1, 2006')
+        firstApp: new Date('October, 1, 2006')
     },
     {
         id: 'ma4',
         name: 'thor odinson',
         alias: 'thor',
-        powers: ['mjolnir', 'lighting', 'flight'],
+        powers: ['mjolnir', 'strong', 'flies', 'summon lightning'],
         franchise: 'marvel',
         team: ['avengers'],
         alignment: true,
-        riavals: ['loki', 'hulk', 'enchantress', 'the god butcher', 'galactus'],
+        rivals: ['loki', 'hulk', 'enchantress', 'the god butcher', 'galactus'],
         species: 'god',
         firstApp: new Date('August 1, 1962')
     },
@@ -101,11 +105,11 @@ const heroes = [
         alias: 'batman',
         powers: ['money', 'smart', 'martial arts'],
         franchise: 'dc',
-        team: ['justic league', 'the bat family'],
+        team: ['justice league', 'the bat family'],
         alignment: true,
-        riavals: ['joker', 'bane', 'riddler', 'cat women'],
+        rivals: ['joker', 'penguin', 'riddler', 'bane', 'clayface'],
         species: 'human',
-        firstApp: new Date('MAy 1, 1939')
+        firstApp: new Date('May 1, 1939')
     },
     {
         id: 'dc3',
@@ -115,7 +119,7 @@ const heroes = [
         franchise: 'dc',
         team: ['the bat family', 'the outlaws'],
         alignment: false,
-        riavals: ['joker', 'batman', 'deathstroke', 'enchantress'],
+        rivals: ['joker', 'batman', 'deathstroke', 'black mask'],
         species: 'human',
         firstApp: new Date('March 1, 1983')
     },
@@ -127,19 +131,19 @@ const heroes = [
         franchise: 'dc',
         team: ['teen titans'],
         alignment: true,
-        riavals: ['deathstroke', 'trigon'],
+        rivals: ['trigon', 'deathstroke'],
         species: 'demon',
         firstApp: new Date('October 1, 1980')
     },
     {
-        id: 'mil',
+        id: 'mi1',
         name: 'oroku sake',
         alias: 'shredder',
         powers: ['martial arts', 'ninjitsu'],
         franchise: 'mirage',
         team: ['foot clan'],
-        alignment: true,
-        riavals: ['tmnt', 'splinter'],
+        alignment: false,
+        rivals: ['tmnt', 'splinter'],
         species: 'human',
         firstApp: new Date('May 1, 1984')
     },
@@ -151,7 +155,7 @@ const heroes = [
         franchise: 'dc',
         team: ['justice league', 'green lantern corps'],
         alignment: true,
-        riavals: ['sinesteo', 'kilowog', 'orange lanterns', 'enchantress'],
+        rivals: ['sinestro', 'kilowog', 'orange lanterns', 'red lanterns'],
         species: 'human',
         firstApp: new Date('October 1, 1959')
     },
@@ -161,9 +165,9 @@ const heroes = [
         alias: 'miss martian',
         powers: ['shape shifting', 'telekinesis', 'intellect'],
         franchise: 'dc',
-        team: ['young justic', 'teen titan'],
+        team: ['young justice', 'teen titans'],
         alignment: true,
-        riavals: ['bombshell'],
+        rivals: ['bombshell'],
         species: 'alien',
         firstApp: new Date('August 1, 2006')
     },
@@ -173,21 +177,21 @@ const heroes = [
         alias: 'kite man',
         powers: ['can fly kites'],
         franchise: 'dc',
-        team: null,
+        team: [],
         alignment: false,
-        riavals: ['batmn', 'catman','swamp thang'],
+        rivals: ['batman', 'catwoman', 'swamp thing'],
         species: 'human',
         firstApp: new Date('August 1, 1960')
     },
     {
         id: 'ma5',
-        name: 'petter petruski',
-        alias: 'past pot pete',
+        name: 'peter petruski',
+        alias: 'paste-pot pete',
         powers: ['adhesive lubricant', 'smart'],
         franchise: 'marvel',
         team: ['frightful four', 'frightful five'],
-        alignment: true,
-        riavals: ['human torch', 'spiderman', 'captain america'],
+        alignment: false,
+        rivals: ['human torch', 'captain america', 'spider-man'],
         species: 'human',
         firstApp: new Date('January 1, 1963')
     },
@@ -197,45 +201,45 @@ const heroes = [
         alias: 'groot',
         powers: ['regeneration', 'the earth'],
         franchise: 'marvel',
-        team: ['guradians of the galaxy'],
+        team: ['guardians of the galaxy'],
         alignment: true,
-        riavals: ['thanos', 'ronin', 'ego','high evolutioner'],
+        rivals: ['thanos', 'ronin', 'ego', 'high evolutioner'],
         species: 'alien',
         firstApp: new Date('November 1, 1960')
     },
     {
         id: 'ma7',
         name: 'victor von doom',
-        alias: 'dr. doom',
+        alias: 'dr doom',
         powers: ['magic', 'smart', 'money'],
         franchise: 'marvel',
-        team: null,
+        team: [],
         alignment: false,
-        riavals: ['fantastic four', 'hulk', 'x-men','black panther', 'mephistio',],
+        rivals: ['fantastic four', 'hulk', 'x-men', 'black panther', 'mephistio'],
         species: 'human',
         firstApp: new Date('July 1, 1962')
     },
     {
         id: 'ma8',
-        name: '',
-        alias: 'kange the conqueror',
+        name: 'nathaniel richards',
+        alias: 'kang the conqueror',
         powers: ['controls technology', 'smart'],
         franchise: 'marvel',
         team: ['the counsel of kangs'],
         alignment: false,
-        riavals: ['avengers', 'fantastic four'],
+        rivals: ['avengers', 'fantastic four', 'thanos'],
         species: 'human',
-        firstApp: new Date('July 1, 1963')
+        firstApp: new Date('October 1, 1963')
     },
     {
         id: 'ma9',
         name: 'marc spector',
-        alias: 'moon knght',
+        alias: 'moon knight',
         powers: ['moon empowerment', 'detective', 'martial arts'],
         franchise: 'marvel',
-        team: ['avengers'],
+        team: ['secret avengers', 'midnight sons'],
         alignment: true,
-        riavals: ['hobgoblin', 'the boogey-man', 'bushman'],
+        rivals: ['hobgoblin', 'the boogey-man', 'bushman'],
         species: 'human',
         firstApp: new Date('August 1, 1975')
     },
@@ -246,8 +250,8 @@ const heroes = [
         powers: ['insanity', 'expert chemist', 'smart'],
         franchise: 'dc',
         team: ['injustice league', 'the legion of doom'],
-        alignment: true,
-        riavals: ['the bat family', 'justice league'],
+        alignment: false,
+        rivals: ['batman', 'the bat family', 'justice league'],
         species: 'human',
         firstApp: new Date('April 1, 1940')
     },
@@ -259,44 +263,307 @@ const heroes = [
         franchise: 'marvel',
         team: ['avengers', 'shield'],
         alignment: true,
-        riavals: ['task master', 'ironman', 'thanos'],
+        rivals: ['task master', 'ironman', 'thanos'],
         species: 'human',
         firstApp: new Date('April 1, 1964')
     },
     {
         id: 'ma11',
         name: 'tony stark',
-        alias: 'iron man',
+        alias: 'ironman',
         powers: ['money', 'smart', 'weapons'],
         franchise: 'marvel',
-        team: ['avengers','illuminati'],
+        team: ['avengers', 'illuminati' ],
         alignment: true,
-        riavals: ['iron monger', 'captain america', 'thanos', 'the leader'],
+        rivals: ['iron monger', 'captain america', 'thanos', 'the leader', 'captain marvel'],
         species: 'human',
-        firstApp: new Date('July 1, 1963')
+        firstApp: new Date('December 1, 1962')
     },
     {
-        id: 'mal2',
+        id: 'ma12',
         name: 'eddie brock',
         alias: 'venom',
-        powers: ['goop', 'symbiote suit','super strength'],
+        powers: ['goop', 'symbiote suit', 'super strength'],
         franchise: 'marvel',
-        team: null,
+        team: [],
         alignment: false,
-        riavals: ['spider-man', 'carnage', 'knull', 'enchantress','shield'],
-        species: 'human',
+        rivals: ['spider-man', 'carnage', 'knull', 'shield'],
+        species: 'alien',
         firstApp: new Date('September 1, 1986')
     },
     {
         id: 'ma13',
         name: 'baymax',
         alias: 'baymax',
-        powers: ['morph body into a dragon'],
+        powers: ['morphism'],
         franchise: 'marvel',
         team: ['big hero six'],
         alignment: true,
-        riavals: ['yokai'],
-        species: 'robbot',
-        firstApp: new Date('september 1, 1998')
+        rivals: ['yokai'],
+        species: 'robot',
+        firstApp: new Date('September 1, 1998')
     },
+    {
+        id: 'dc9',
+        name: 'barry allen',
+        alias: 'flash',
+        powers: ['speed', 'decelerated aging', 'accelerated healing'],
+        franchise: 'dc',
+        team: ['justice league', 'all-star squadron'],
+        alignment: true,
+        rivals: ['zoom', 'black racer', 'legion of doom'],
+        species: 'human',
+        firstApp: new Date('January 1, 1940')
+    },
+    {
+        id: 'mi2',
+        name: 'raphael',
+        alias: 'raphael',
+        powers: ['ninjitsu', 'twin sai'],
+        franchise: 'mirage',
+        team: ['tmnt'],
+        alignment: true,
+        rivals: ['shredder', 'foot clan'],
+        species: 'mutant',
+        firstApp: new Date('May 1, 1984')
+    },
+    {
+        id: 'ma14',
+        name: 'hank mccoy',
+        alias: 'beast',
+        powers: ['intellect', 'agility', 'pheremone manipulation'],
+        franchise: 'marvel',
+        team: ['x-men', 'avengers', 'illuminati' ],
+        alignment: true,
+        rivals: ['magneto', 'juggernaut', 'bolivar trask'],
+        species: 'mutant',
+        firstApp: new Date('September 1, 1963')
+    },
+    {
+        id: 'ma15',
+        name: 'reed richards',
+        alias: 'mr. fantastic',
+        powers: ['intellect', 'elasticity', 'shapeshifting'],
+        franchise: 'marvel',
+        team: ['avengers', 'defenders', 'illuminati'],
+        alignment: true,
+        rivals: ['dr. doom', 'mole man', 'sub-mariner', 'molecule man'],
+        species: 'human',
+        firstApp: new Date('November 1, 1961')
+    },
+    {
+        id: 'dc10',
+        name: 'diana of themyscira',
+        alias: 'wonder woman',
+        powers: ['strength', 'flight', 'energy absorption', 'lasso of truth'],
+        franchise: 'dc',
+        team: ['justice league', 'amazon'],
+        alignment: true,
+        rivals: ['ares', 'doctor poison', 'circe', 'giganta', 'doctor cyber'],
+        species: 'god',
+        firstApp: new Date('October 1, 1941')
+    },
+    {
+        id: 'ma16',
+        name: 'erik lehnsherr',
+        alias: 'magneto',
+        powers: ['magnetism manipulation', 'astral projection', 'intellect'],
+        franchise: 'marvel',
+        team: ['brotherhood of mutants', 'x-men', 'new mutants'],
+        alignment: false,
+        rivals: ['x-men', 'william stryker', 'human beings'],
+        species: 'mutant',
+        firstApp: new Date('September 1, 1963')
+    },
+    {
+        id: 'ma17',
+        name: 'matt murdock',
+        alias: 'daredevil',
+        powers: ['echo location', 'martial arts', 'lawyer'],
+        franchise: 'marvel',
+        team: ['defenders', 'new avengers'],
+        alignment: true,
+        rivals: ['kingpin', 'bullseye'],
+        species: 'human',
+        firstApp: new Date('April 1, 1964')
+    },
+    {
+        id: 'ma18',
+        name: 'reed richards',
+        alias: 'the maker',
+        powers: ['elasticity', 'intellect', 'dimension hopping'],
+        franchise: 'marvel',
+        team: ['w.h.i.s.p.e.r.', 'children of tomorrow', 'dark ultimates' ],
+        alignment: false,
+        rivals: ['mr. fantastic', 'dr. doom', 'tony stark'],
+        species: 'human',
+        firstApp: new Date('February 1, 2004')
+    },
+    {
+        id: 'ma19',
+        name: 'logan',
+        alias: 'wolverine',
+        powers: ['claws', 'strength', 'regenerative healing', 'immortality'],
+        franchise: 'marvel',
+        team: ['x-men', 'avengers'],
+        alignment: true,
+        rivals: ['cyclops', 'sabretooth', 'omega red'],
+        species: 'mutant',
+        firstApp: new Date('October 1, 1974')
+    },
+    {
+        id: 'dc11',
+        name: 'shiera sanders-hall',
+        alias: 'hawkgirl',
+        powers: ['flight', 'immortality', 'strength', 'accelerated healing'],
+        franchise: 'dc',
+        team: ['justice society of america', 'justice league', 'white lantern corps'],
+        alignment: true,
+        rivals: ['hath-set', 'head hunter'],
+        species: 'human',
+        firstApp: new Date('June 1, 1941')
+    },
+    {
+        id: 'ma20',
+        name: 'wade wilson',
+        alias: 'deadpool',
+        powers: ['strength', 'regenerative healing', 'martial arts', 'weapons', '4th wall breaking'],
+        franchise: 'marvel',
+        team: ['x-men', 'avengers', 'thunderbolts' ],
+        alignment: true,
+        rivals: ['cable', 'ajax', 'doctor bong'],
+        species: 'mutant',
+        firstApp: new Date('February 1, 1991')
+    }
 ]
+
+/** Build cards **/
+const row = document.getElementById('row')
+
+const makeList =(el, arr)=> {
+
+    if (arr.length == 0) {
+        const li = document.createElement('li')
+
+        li.classList.add('list-group-item')
+
+        li.innerText = 'none'
+
+        el.appendChild(li)
+    }
+
+    arr.forEach(item => {
+        const li = document.createElement('li')
+        li.classList.add('list-group-item', 'text-capitalize')
+
+        li.innerText = item 
+
+        el.appendChild(li)
+        
+    })
+}
+
+const buildCards =(obj)=> {
+
+
+    //make sure that row is empty
+    // row.innerHTML = ''
+
+    const column = document.createElement('div')
+    column.classList.add('col')
+
+    const card = document.createElement('div')
+    card.classList.add('card', 'h-100')
+    card.setAttribute('id', `card-${obj.id}`)
+
+    const cardBody = document.createElement('div')
+    cardBody.classList.add('card-body')
+
+    const cardHeader = document.createElement('div')
+    cardHeader.classList.add('card-header')
+
+    const alias = document.createElement('h4')
+    alias.classList.add('text-capitalize')
+    alias.innerText = obj.alias
+
+    const heroName = document.createElement('p')
+    heroName.classList.add('text-capitalize', 'fst-italic')
+    heroName.innerText = obj.name
+
+    const powersLabel = document.createElement('h3')
+    powersLabel.classList.add('text-capitalize', 'text-danger')
+    powersLabel.innerText = 'powers'
+
+    const powersList = document.createElement('ul')
+    powersList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.powers) === 'object') {
+        makeList(powersList, obj.powers)
+    }
+
+    const teamsLabel = document.createElement('h3')
+    teamsLabel.classList.add('text-capitalize', 'text-primary')
+    teamsLabel.innerText = 'teams'
+
+    const teamsList = document.createElement('ul')
+    teamsList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.team) === 'object') {
+        makeList(teamsList, obj.team)
+    }
+
+    const rivalsLabel = document.createElement('h3')
+    rivalsLabel.classList.add('text-capitalize', 'text-primary')
+    rivalsLabel.innerText = 'rivals'
+
+    const rivalsList = document.createElement('ul')
+    rivalsList.classList.add('list-group', 'list-group-flush')
+
+    if (typeof(obj.rivals) === 'object') {
+        makeList(rivalsList, obj.rivals)
+    }
+
+    // obj.rivals.forEach(rival => {
+    //     const li = document.createElement('li')
+    //     li.classList.add('list-group-item', 'text-capitalize')
+
+    //     li.innerText = rival 
+
+    //     rivalsList.appendChild(li)
+    // })
+
+    /**appendChild here!! */
+
+    const cardFooter = document.createElement('div')
+    cardFooter.classList.add('card-footer')
+
+    cardFooter.innerHTML = `
+        <p class="card-text">Species: ${obj.species}</p>
+        <p class="card-text">Franchise: ${obj.franchise}</p>
+        <p class="card-text">First App: ${obj.firstApp.getMonth() +1 }/${obj.firstApp.getFullYear()}</p`
+
+    cardHeader.appendChild(alias)
+    cardHeader.appendChild(heroName)
+    // append more children here to cardBody 
+
+    card.appendChild(cardHeader)
+
+    cardBody.appendChild(powersLabel)
+    cardBody.appendChild(powersList)
+
+    cardBody.appendChild(teamsLabel)
+    cardBody.appendChild(teamsList)
+
+    cardBody.appendChild(rivalsLabel)
+    cardBody.appendChild(rivalsList)
+
+    card.appendChild(cardBody)
+    card.appendChild(cardFooter)
+    column.appendChild(card)
+
+    row.appendChild(column)
+
+}
+
+// buildCards(heroes[0])
+heroes.forEach(hero => buildCards(hero))
